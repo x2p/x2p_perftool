@@ -1,0 +1,71 @@
+# Lancement de la capture
+./main.pl <nombre de secondes entre mesures> <nombre de mesures>
+
+Exemple : ./main.pl 5 2
+
+# Creation des fichiers de capture
+Il y aura la creation des fichiers suivants qui vont contenir les valeurs des metriques dans le repertoire repertoire_capture :
+
+	- cpu_JJMMYY_HHMMSS contenant les metriques de type  processeur
+	- mem_JJMMYY_HHMMSS contenant les metriques de type memoire
+	- ethX_JJMMYY_HHMMSS contenant les metriques de type reseau pour chaque interface (X reprensente un numero pour designer une interface)
+	- sdY_JJMMYY_HHMMSS ou hdX_JJMMYY_HHMMSS contenant les metriques de type disque pour chaque disque (Y reprensete une lettre pour designer un disque)
+
+# Organisation du contenu des fichiers
+Dans chaque fichier, un saut de ligne separe chaque mesure. Voici le detail des metriques recueillies pour chaque type de fichier sur une mesure :
+
+	- cpu
+
+1er ligne : Pourcentage de temps CPU dedie au code utilisateur
+2ieme ligne : Pourcentage de temps CPU dedie au code noyau
+3ieme ligne : Pourcentage de temps CPU libre
+4ieme ligne : Pourcentage de temps CPU en attente d'operations I/O
+5ieme ligne : Nombre d'interruption par seconde incluant l'horloge
+6ieme ligne : Nombre de changement de contexte par seconde
+7ieme ligne : Nombre de processus en attente de temps CPU
+8ieme ligne : Nombre de processus en attente d'operations I/O
+
+	- mem
+
+1er ligne : Quantite de memoire total 
+2ieme ligne : Quantite de memoire utilisee
+3ieme ligne : Quantite de memoire libre
+4ieme ligne : Quantite de memoire partagee
+5ieme ligne : Quantite de memoire utilisee pour le cache systeme
+6ieme ligne : Quantite de memoire utilisee pour le cache applicatif
+7ieme ligne : Quantite de memoire utilisee sans compter les caches
+8ieme ligne : Quantite de memoire libre sans compter les caches
+9ieme ligne : Quantite de SWAP total
+10ieme ligne : Quantite de SWAP utilisee
+11ieme ligne : Quantite de SWAP libre
+
+	- ethX
+
+1er ligne : Nombre de paquets valides recus 
+2ieme ligne : Nombre de paquets errones recus
+3ieme ligne : Nombre de paquets rejetes recus
+4ieme ligne : Nombre de paquets perdus recus
+5ieme ligne : Nombre de paquets valides envoyes
+6ieme ligne : Nombre de paquets errones envoyes
+7ieme ligne : Nombre de paquets rejete envoyes
+8ieme ligne : Nombre de paquets perdus envoyes
+9ieme ligne : Nombre d'erreur sur les fenetres TCP
+10ieme ligne : Nombre d'erreur sur la porteuse
+11ieme ligne : Nombre de collisions
+12ieme ligne : Nombre de Mo recu
+13ieme ligne : Nombre de Mo envoye
+
+	- sdY ou hdY
+
+1er ligne : Nombre de blocs lus
+2ieme ligne : Nombre de blocs ecrits
+3ieme ligne : Nombre de blocs lus fusionnes
+4ieme ligne : Nombre de blocs ecrits fusionnes
+5ieme ligne : Nombre de secteurs lus
+6ieme ligne : Nombre de secteurs ecrits fusionnes
+7ieme ligne : Temps passe a lire 
+8ieme ligne : Temps passe a ecrire
+9ieme ligne : Nombre de blocs en cours de traitement
+10ieme ligne : Temps passe a effectuer des operations d'I/O
+
+
