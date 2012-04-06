@@ -2,14 +2,15 @@
 
 ##############################################################################
 # Nom : main.pl                                                              #
-# But : Extrait des informations CPU et les place dans un fichier            #
+# But : Extrait des informations CPU, memoire, disques et reseau 			 #
 # Syntaxe : ./main.pl <nombre de secondes entre mesures> <nombre de mesures> #
 # Exemple : ./main.pl 5 5                                                    #
 # Date : 05/04/12                                                            #
-# Version : 1.2                                                              #
+# Version : 1.3                                                              #
 #       1.0 : Creation                                                       #
 #       1.1 : Reception des arguments                                        #
 #       1.2 : Modification de la commande de capture de la liste des disques #
+#		1.3 : Modification du grep pour capturer la liste des disques	     #
 # Auteur : Sylvain Ballaud (Xpress2People)                                   #
 # Notes : Tester sur Linux Debian 2.6.32.5                                   #
 ##############################################################################
@@ -49,7 +50,7 @@ $inter = $ARGV[0];
 $nb_prises = $ARGV[1];
 
 # Liste des disques
-@tab_disques = `vmstat -d | grep [hs]d[a-z] | awk '{print \$1}'`;
+@tab_disques = `vmstat -d | grep -w [hs]d[a-z] | awk '{print \$1}'`;
 
 # Liste des interfaces reseau
 @tab_if = `ifconfig -s | grep -v Iface | awk '{print \$1}' | grep -v lo`;

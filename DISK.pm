@@ -1,12 +1,13 @@
-###################################################################
-# Nom : DISK.PM                                                   #
-# But : Module permettant d'extraire des informations disque      #
-# Date : 02/04/12                                                 #
-# Version : 1.0                                                   #
-#       1.0 : Creation                                            #
-# Auteur : Sylvain Ballaud (Xpress2People)                        #
-# Notes : Tester sur Linux Debian 2.6.32.5                        #
-###################################################################
+########################################################################
+# Nom : DISK.PM                                                        #
+# But : Module permettant d'extraire des informations disque           #
+# Date : 02/04/12                                                      #
+# Version : 1.1                                                        #
+#       1.0 : Creation                                                 #
+#		1.1 : Modification du grep poru capturer les stats d'un disque #
+# Auteur : Sylvain Ballaud (Xpress2People)                             #
+# Notes : Tester sur Linux Debian 2.6.32.5                             #
+########################################################################
 
 # Declaration des modules
 package DISK;
@@ -37,61 +38,61 @@ sub new
 sub show_disk_read
 {
 	my ($this) = @_;
-	$this->{ATT_DISK_READ} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$2}'`;
+	$this->{ATT_DISK_READ} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$2}'`;
 }
 
 sub show_disk_write
 {
         my ($this) = @_;
-        $this->{ATT_DISK_WRITE} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$6}'`;
+        $this->{ATT_DISK_WRITE} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$6}'`;
 }
 
 sub show_disk_read_merged
 {
         my ($this) = @_;
-        $this->{ATT_DISK_READ_MERGED} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$3}'`;
+        $this->{ATT_DISK_READ_MERGED} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$3}'`;
 }
 
 sub show_disk_write_merged
 {
         my ($this) = @_;
-        $this->{ATT_DISK_WRITE_MERGED} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$7}'`;
+        $this->{ATT_DISK_WRITE_MERGED} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$7}'`;
 }
 
 sub show_disk_read_sec
 {
         my ($this) = @_;
-        $this->{ATT_DISK_READ_SEC} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$4}'`;
+        $this->{ATT_DISK_READ_SEC} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$4}'`;
 }
 
 sub show_disk_write_sec
 {
         my ($this) = @_;
-        $this->{ATT_DISK_WRITE_SEC} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$8}'`;
+        $this->{ATT_DISK_WRITE_SEC} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$8}'`;
 }
 
 sub show_disk_time_read
 {
         my ($this) = @_;
-        $this->{ATT_DISK_TIME_READ} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$5}'`;
+        $this->{ATT_DISK_TIME_READ} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$5}'`;
 }
 
 sub show_disk_time_write
 {
         my ($this) = @_;
-        $this->{ATT_DISK_TIME_WRITE} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$9}'`;
+        $this->{ATT_DISK_TIME_WRITE} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$9}'`;
 }
 
 sub show_disk_nb_io
 {
         my ($this) = @_;
-        $this->{ATT_DISK_NB_IO} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$10}'`;
+        $this->{ATT_DISK_NB_IO} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$10}'`;
 }
 
 sub show_disk_time_io
 {
         my ($this) = @_;
-        $this->{ATT_DISK_TIME_IO} = `vmstat -d | grep $this->{ATT_DISK_NAME} | awk '{print \$11}'`;
+        $this->{ATT_DISK_TIME_IO} = `vmstat -d | grep -w $this->{ATT_DISK_NAME} | awk '{print \$11}'`;
 }
 
 
