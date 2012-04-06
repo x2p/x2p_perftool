@@ -52,8 +52,8 @@ Dans chaque fichier, un saut de ligne separe chaque mesure. Voici le detail des 
 9ieme ligne : Nombre d'erreur sur les fenetres TCP
 10ieme ligne : Nombre d'erreur sur la porteuse
 11ieme ligne : Nombre de collisions
-12ieme ligne : Nombre de Mo recu
-13ieme ligne : Nombre de Mo envoye
+12ieme ligne : Nombre d'octets recu
+13ieme ligne : Nombre d'octets envoye
 
 	- sdY ou hdY
 
