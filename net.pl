@@ -6,9 +6,10 @@
 # Syntaxe : ./net.pl <nombre de secondes entre mesures> <nombre de mesures> <nom de l'interface> #
 # Exemple : ./net.pl 5 5 eth0                                                 		  	 #
 # Date : 04/04/12                                                           			 #
-# Version : 1.1                                                             			 #
+# Version : 1.2                                                             			 #
 #       1.0 : Creation                                                      			 #
 #       1.1 : Reception des arguments                                       			 #
+#	1.2 : Modification des methodes show_net_rx_oct et show_net_tx_oct			 #
 # Auteur : Sylvain Ballaud (Xpress2People)                                  			 #
 # Notes : Tester sur Linux Debian 2.6.32.5                                  			 #
 ##################################################################################################
@@ -68,8 +69,8 @@ for ($i=1; $i<=$nb_prises; $i++)
         $OBJ_NET->show_net_frame();
         $OBJ_NET->show_net_carrier();
         $OBJ_NET->show_net_coll();
-        $OBJ_NET->show_net_rx_mo();
-        $OBJ_NET->show_net_tx_mo();
+        $OBJ_NET->show_net_rx_oct();
+        $OBJ_NET->show_net_tx_oct();
 
         # Ecriture dans le fichier
         print "$OBJ_NET->{ATT_NET_RX_OK}";
@@ -83,8 +84,8 @@ for ($i=1; $i<=$nb_prises; $i++)
         print "$OBJ_NET->{ATT_NET_FRAME}";
         print "$OBJ_NET->{ATT_NET_CARRIER}";
         print "$OBJ_NET->{ATT_NET_COLL}";
-        print "$OBJ_NET->{ATT_NET_RX_MO}";
-        print "$OBJ_NET->{ATT_NET_TX_MO}\n";
+        print "$OBJ_NET->{ATT_NET_RX_OCT}";
+        print "$OBJ_NET->{ATT_NET_TX_OCT}\n";
 
         # Intervalle entre deux mesures
         system("sleep $inter");
