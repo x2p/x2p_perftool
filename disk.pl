@@ -1,16 +1,16 @@
 #!/usr/bin/perl -w
 
 ##############################################################################################
-# Nom : disk.pl      	                                                     		     #
-# But : Extrait des informations disque et les place dans un fichier 	     		     #
+# Nom : disk.pl      	                                                     		   	     #
+# But : Extrait des informations disque et les place dans un fichier 	     		   	     #
 # Syntaxe : ./disk.pl <nombre de secondes entre mesures> <nombre de mesures> <nom du disque> #
-# Exemple : ./disk.pl 10 3 sda                                                   	     #
-# Date : 02/04/12              		                                     		     #
-# Version : 1.1                           	                             		     #
-#       1.0 : Creation                               		             		     #
-#       1.1 : Reception des arguments                           	     		     #
-# Auteur : Sylvain Ballaud (Xpress2People)                       	     		     #
-# Notes : Tester sur Linux Debian 2.6.32.5                        	     		     #
+# Exemple : ./disk.pl 10 3 sda                                                   		     #
+# Date : 02/04/12              		                                     		    		 #
+# Version : 1.1                           	                             		  		     #
+#       1.0 : Creation                               		             		   		     #
+#       1.1 : Reception des arguments                           	     		   		     #
+# Auteur : Sylvain Ballaud (Xpress2People)                       	     		   			 #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 					 #
 ##############################################################################################
 
 # Declaration des modules

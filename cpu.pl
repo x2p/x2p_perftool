@@ -1,16 +1,16 @@
 #!/usr/bin/perl -w
 
 #############################################################################
-# Nom : cpu.pl 							  	    #
+# Nom : cpu.pl 							  	   							    #
 # But : Extrait des informations CPU et les place dans un fichier           #
 # Syntaxe : ./cpu.pl <nombre de secondes entre mesures> <nombre de mesures> #
-# Exemple : ./cpu.pl 5 5       					            #
-# Date : 30/03/12						            #
-# Version : 1.1							  	    #
-#	1.0 : Creation						  	    #
-#	1.1 : Reception des arguments				  	    #
-# Auteur : Sylvain Ballaud (Xpress2People)			  	    #
-# Notes : Tester sur Linux Debian 2.6.32.5                        	    #
+# Exemple : ./cpu.pl 5 5       					          				    #
+# Date : 30/03/12						           						    #
+# Version : 1.1							 						    	    #
+#	1.0 : Creation						  	   							    #
+#	1.1 : Reception des arguments				  	 				        #
+# Auteur : Sylvain Ballaud (Xpress2People)			  	  				    #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12   #
 #############################################################################
 
 # Declaration de modules

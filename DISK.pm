@@ -1,13 +1,13 @@
-########################################################################
-# Nom : DISK.PM                                                        #
-# But : Module permettant d'extraire des informations disque           #
-# Date : 02/04/12                                                      #
-# Version : 1.1                                                        #
-#       1.0 : Creation                                                 #
-#		1.1 : Modification du grep poru capturer les stats d'un disque #
-# Auteur : Sylvain Ballaud (Xpress2People)                             #
-# Notes : Tester sur Linux Debian 2.6.32.5                             #
-########################################################################
+###########################################################################
+# Nom : DISK.PM                                                           #
+# But : Module permettant d'extraire des informations disque              #
+# Date : 02/04/12                                                         #
+# Version : 1.1                                                           #
+#       1.0 : Creation                                                	  #
+#		1.1 : Modification du grep poru capturer les stats d'un disque 	  #
+# Auteur : Sylvain Ballaud (Xpress2People)                                #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 #
+###########################################################################
 
 # Declaration des modules
 package DISK;

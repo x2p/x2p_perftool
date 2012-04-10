@@ -1,3 +1,6 @@
+# Mettre les droits d'execution
+chmod +x *
+
 # Lancement de la capture
 ./main.pl <nombre de secondes entre mesures> <nombre de mesures>
 
@@ -67,5 +70,3 @@ Dans chaque fichier, un saut de ligne separe chaque mesure. Voici le detail des 
 8ieme ligne : Temps passe a ecrire
 9ieme ligne : Nombre de blocs en cours de traitement
 10ieme ligne : Temps passe a effectuer des operations d'I/O
-
-

@@ -1,12 +1,12 @@
-###################################################################
-# Nom : CPU.PM                                                    #
-# But : Module permettant d'extraire des informations CPU	  #
-# Date : 30/03/12                                                 #
-# Version : 1.0                                                   #
-#       1.0 : Creation                                            #
-# Auteur : Sylvain Ballaud (Xpress2People)                        #
-# Notes : Tester sur Linux Debian 2.6.32.5                        #
-###################################################################
+###########################################################################
+# Nom : CPU.PM                                              		      #
+# But : Module permettant d'extraire des informations CPU				  #
+# Date : 30/03/12                                           		      #
+# Version : 1.0                                              		      #
+#       1.0 : Creation                                         		      #
+# Auteur : Sylvain Ballaud (Xpress2People)                       		  #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 #
+###########################################################################
 
 # Declaration des modules
 package CPU;

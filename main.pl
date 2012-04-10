@@ -12,7 +12,7 @@
 #       1.2 : Modification de la commande de capture de la liste des disques #
 #		1.3 : Modification du grep pour capturer la liste des disques	     #
 # Auteur : Sylvain Ballaud (Xpress2People)                                   #
-# Notes : Tester sur Linux Debian 2.6.32.5                                   #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 	 #
 ##############################################################################
 
 # Declaration de modules

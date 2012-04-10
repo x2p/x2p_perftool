@@ -1,17 +1,17 @@
 #!/usr/bin/perl -w
 
 ##################################################################################################
-# Nom : net.pl                                                              			 #
-# But : Extrait des informations CPU et les place dans un fichier           			 #
+# Nom : net.pl                                                              					 #
+# But : Extrait des informations CPU et les place dans un fichier           					 #
 # Syntaxe : ./net.pl <nombre de secondes entre mesures> <nombre de mesures> <nom de l'interface> #
-# Exemple : ./net.pl 5 5 eth0                                                 		  	 #
-# Date : 04/04/12                                                           			 #
-# Version : 1.2                                                             			 #
-#       1.0 : Creation                                                      			 #
-#       1.1 : Reception des arguments                                       			 #
-#	1.2 : Modification des methodes show_net_rx_oct et show_net_tx_oct			 #
-# Auteur : Sylvain Ballaud (Xpress2People)                                  			 #
-# Notes : Tester sur Linux Debian 2.6.32.5                                  			 #
+# Exemple : ./net.pl 5 5 eth0                                                 		  		     #
+# Date : 04/04/12                                                           				     #
+# Version : 1.2                                                             				     #
+#       1.0 : Creation                                                      				     #
+#       1.1 : Reception des arguments                                       					 #
+#		1.2 : Modification des methodes show_net_rx_oct et show_net_tx_oct						 #
+# Auteur : Sylvain Ballaud (Xpress2People)                                  					 #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 				     	 #
 ##################################################################################################
 
 # Declaration de modules

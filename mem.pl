@@ -10,7 +10,7 @@
 #       1.0 : Creation                                                      #
 #       1.1 : Reception des arguments                                       #
 # Auteur : Sylvain Ballaud (Xpress2People)                                  #
-# Notes : Tester sur Linux Debian 2.6.32.5                                  #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12 	#
 #############################################################################
 
 # Declaration de modules

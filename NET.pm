@@ -1,12 +1,12 @@
 #############################################################################
-# Nom : NET.PM                                                   	    #
+# Nom : NET.PM                                                   	   	    #
 # But : Module permettant d'extraire des informations reseau                #
 # Date : 04/04/12                                                           #
 # Version : 1.1                                                             #
 #       1.0 : Creation                                                      #
-#	1.1 : Modification des fonctions show_net_rx_oct et show_net_tx_oct # 
+#		1.1 : Modification des fonctions show_net_rx_oct et show_net_tx_oct # 
 # Auteur : Sylvain Ballaud (Xpress2People)                                  #
-# Notes : Tester sur Linux Debian 2.6.32.5                                  #
+# Notes : Tester sur Linux Debian 6, Fedora 16, CentOS 5.8 et OpenSUSE 12   #
 #############################################################################
 
 # Declaration des modules
